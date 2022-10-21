@@ -1,0 +1,163 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS2 Decision making</title>
+</head>
+<body>
+    Q1. Calculator?
+
+      Ans. const Calculator = (A, B, C) => {
+        
+          switch (A){
+            case "+":
+              return ( B + C);
+              
+            case "-":
+              return  ( B - C);
+              
+            case "*":
+              return  ( B * C);
+              
+            case "/":
+              return  ( B / C);
+              
+            default:
+              return ("bad expression")
+          }
+      };
+
+    
+Q2. Check whether the condition is fulfilled or not?
+        Ans. const Check_divisibility = (N) => {
+            if (N % 6 === 0 && N % 9 === 0){
+              return ("Divisible by both");
+            }
+            else{
+              return ("Not Divisible by both");
+            }
+        
+            
+        };
+        
+    
+Q3. Eligible Voter?
+        Ans.const isEligible = (a) => {
+            if (a >= 18){
+              return ("Eligible for Voting")
+            }
+            
+            else{
+              return ("Not Eligible for Voting")
+            }
+          
+        };
+    
+Q4. Find Relation?
+        Ans. const findRelation = (x,y) => {
+            if (x < y){
+              return (x + " is smaller than " + y);
+            }
+            
+            else if (x > y){
+              return (x + " is greater than " + y);
+            }
+            
+            else{
+              return (x + " is equal to " + y);
+            }
+        };
+    
+Q5. Find Grades?
+        Ans. const findGrades = (a) => {
+            if (a <= 10){
+              return ("E");
+            }
+            else if(a >= 11 && a <= 20){
+             return ("D" );
+            }
+            else if(a >= 21 && a <= 30){
+             return ("C") ;
+            }
+            else if(a >= 31 && a <= 40){
+             return ("B") ;
+            }
+            else{
+              return ("A");
+            }
+        };
+    
+Q6. Get Value?
+        Ans. const getValue = (a) => {
+            if (a == "P" || a == "p") {
+              return ("PrepBytes");
+            }
+            else if (a == "Z" || a == "z") {
+              return ("Zenith");
+            }
+            else if(a == "E" || a == "e") {
+              return ("Expert Coder");
+            }
+            else if (a == "D" || a == "d"){
+              return ("Data Structure");
+            }
+            else{
+              return ("check input")
+            }
+        };
+        
+    
+Q7. Find the maximum out of three numbers?
+        Ans. const Max_out_of_three = (A,B,C) => {
+            if (A > B && A > C){
+              return A;
+            }
+            else if (B > A && B > C){
+              return B;
+            }
+            
+            else if (C > A && C > B ){
+              return C;
+            }
+            
+            else{
+              return -1;
+            }
+        };
+        
+    
+Q8. Second Smallest?
+      Ans. const findSndSmallest = (x,y,z) => {
+  
+  
+        if((x < y&& y< z)||(z < y && y < x)){
+              
+              return y;
+            }
+              
+           else if((y < x && x < z)||(z < x && x < y)){
+              
+              return (x)
+            }
+          else{
+            return(z);
+          }    
+   };
+    
+Q9. Check whether the triangle is Acute or Obtuse?
+        
+        Ans. const Triangle_Check = (A,B,C) => {
+            
+            if (A > B + C || B > C + A || C > A + B ){
+            return ("obtuse");
+            }
+            
+            else{
+            return ("acute");
+            }
+
+        };
+    
+</body>
+</html>
